@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Ander Bustamante | Tarjeta digital</title>
+    <meta name="description" content="CV, LinkedIn y portafolio de Ithalo Ander Bustamante Torres, desarrollador Fullstack." />
+    <meta name="theme-color" content="#2a0319" />
+    <meta property="og:title" content="Ander Bustamante | Desarrollador Fullstack" />
+    <meta property="og:description" content="Mi CV, LinkedIn y portafolio en un solo lugar." />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Work+Sans:wght@400;600&display=swap" />
+    <style>
+      :root {
+        --bg: #2a0319;
+        --card: #1c0214;
+        --line: #85446a;
+        --accent: #ff4a2e;
+        --gold: #f2b84b;
+        --text: #f4ead6;
+        --muted: #dbbcd0;
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 20px 16px;
+        background: linear-gradient(180deg, #4a0524 0%, var(--bg) 100%) fixed;
+        color: var(--text);
+        font: 400 1rem/1.5 'Work Sans', system-ui, sans-serif;
+      }
+
+      .card {
+        width: min(420px, 100%);
+        overflow: hidden;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+        text-align: center;
+      }
+
+      .cover {
+        height: 130px;
+        background:
+          radial-gradient(circle at 20% 20%, rgba(242, 184, 75, 0.35), transparent 45%),
+          linear-gradient(135deg, var(--accent), #8a1038);
+      }
+
+      .photo {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: -80px auto 0;
+        border-radius: 50%;
+        border: 6px solid var(--card);
+        outline: 2px dashed var(--gold);
+        outline-offset: 3px;
+        object-fit: cover;
+      }
+
+      .content {
+        padding: 20px 24px 28px;
+      }
+
+      h1 {
+        font: 700 clamp(1.5rem, 7vw, 2rem) / 1.15 'Fraunces', Georgia, serif;
+      }
+
+      .full-name {
+        margin-top: 4px;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .role {
+        margin-top: 12px;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .tagline {
+        max-width: 30ch;
+        margin: 6px auto 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .links {
+        display: grid;
+        gap: 14px;
+        margin-top: 26px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .link {
+        display: grid;
+        grid-template-columns: 28px 1fr 28px;
+        align-items: center;
+        gap: 10px;
+        min-height: 60px;
+        padding: 10px 18px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--text);
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+      }
+
+      .link:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent);
+        background: rgba(255, 74, 46, 0.14);
+      }
+
+      .link:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+      }
+
+      .link.primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #1c0214;
+      }
+
+      .link.primary:hover {
+        background: #ff6a52;
+      }
+
+      .link svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+
+      .link small {
+        display: block;
+        font-weight: 400;
+        font-size: 0.78rem;
+        opacity: 0.85;
+      }
+
+      footer {
+        margin-top: 22px;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .link {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="cover"></div>
+      <img class="photo" src="foto.jpg" alt="Foto de Ithalo Ander Bustamante Torres" width="150" height="150" />
+
+      <div class="content">
+        <h1>Ander Bustamante</h1>
+        <p class="full-name">Ithalo Ander Bustamante Torres</p>
+        <p class="role">Desarrollador Fullstack</p>
+        <p class="tagline">Construyo productos web y Android de punta a punta.</p>
+
+        <ul class="links">
+          <li>
+            <a class="link primary" href="CV_Ander_Bustamante_Desarrollador.pdf" download="CV_Ander_Bustamante_Desarrollador.pdf">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.500 9H13V3.500zM11 11h2v5l1.800-1.800 1.400 1.400L12 19.800l-4.200-4.200 1.400-1.400L11 16v-5z" />
+              </svg>
+              <span>Descargar mi CV<small>PDF</small></span>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="https://www.linkedin.com/in/ander-bustamante/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+              </svg>
+              <span>LinkedIn<small>in/ander-bustamante</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="https://anderbstz.site" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 3h6a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3V5a2 2 0 0 1 2-2zm0 4h6V5H9v2z" />
+              </svg>
+              <span>Mi portafolio<small>Proyectos · anderbstz.site</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+
+        <footer>Arequipa, Perú</footer>
+      </div>
+    </main>
+  </body>
+</html>
